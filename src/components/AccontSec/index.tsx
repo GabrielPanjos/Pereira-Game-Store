@@ -1,9 +1,9 @@
-import { CreateAccont } from "./CreateAccont";
-import { JoinAccont } from "./JoinAccont";
+import { AccontButton } from "./AccontButton";
 
 export function AccontSec() {
-  <div>
-    <CreateAccont />
-    <JoinAccont />
-  </div>;
+  return (
+    <div className="flex mr-15 gap-4 items-center font-medium">
+      <AccontButton />
+    </div>
+  );
 }
