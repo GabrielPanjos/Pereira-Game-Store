@@ -5,7 +5,7 @@ import { HeaderButton } from "./HeaderButton";
 
 export function Header() {
   return (
-    <header className="w-full h-30 justify-between flex items-center bg-sky-600">
+    <header className="w-full h-30 justify-between flex items-center bg-slate-900">
       <div className="flex ml-15">
         <button>
           logo

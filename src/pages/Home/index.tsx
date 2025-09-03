@@ -4,7 +4,7 @@ import { Products } from "../../components/Products";
 
 export function Home() {
   return (
-    <div className="h-screen w-screen flex flex-col items-center">
+    <div className="h-screen w-screen bg-slate-100 flex flex-col items-center">
       <Header />
       <Menu />
       <Products />

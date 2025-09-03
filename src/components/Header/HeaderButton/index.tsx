@@ -7,9 +7,11 @@ type HeaderButtonProps = {
 
 export function HeaderButton({ Icon, children }: HeaderButtonProps) {
   return (
-    <button className="flex items-center gap-2 text-white hover:text-gray-300">
+    <button className="flex items-center gap-2 text-slate-100 hover:text-slate-300">
       <Icon className="h-7 w-7" />
-      {children && <span className="font-semibold text-[18px]">{children}</span>}
+      {children && (
+        <span className="font-semibold text-[18px]">{children}</span>
+      )}
     </button>
   );
 }
