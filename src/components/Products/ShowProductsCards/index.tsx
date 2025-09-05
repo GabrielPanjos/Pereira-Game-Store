@@ -3,7 +3,13 @@ import { ProductCard } from "../ProductCard";
 import { useContext } from "react";
 
 export function ShowProductsCards() {
-  const { productFiltered } = useContext(ProductsContext);
+  const context = useContext(ProductsContext);
+
+  if (!context) {
+    return <p>Erro: ProductsContext não encontrado.</p>;
+  }
+
+  const { productFiltered } = context;
 
   return (
     <div>
@@ -11,7 +17,10 @@ export function ShowProductsCards() {
         <div className="h-full justify-center flex flex-wrap gap-10">
           {productFiltered.map((product) => {
             return (
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+              <div
+                key={product.id}
+                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+              >
                 <ProductCard
                   price={product.price}
                   image={product.image}

@@ -14,7 +14,13 @@ export function MenuButton({
   filterCategory,
   children,
 }: MenuButtonProps) {
-  const { filterProducts } = useContext(ProductsContext);
+  const context = useContext(ProductsContext);
+
+  if (!context) {
+    return <p>Erro: ProductsContext não encontrado.</p>;
+  }
+
+  const { filterProducts } = context;
 
   return (
     <button

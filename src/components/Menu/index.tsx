@@ -5,7 +5,7 @@ import { MenuButton } from "./MenuButton";
 export function Menu() {
   return (
     <nav className="flex justify-center items-center gap-22 w-full h-25 bg-sky-950">
-      <MenuButton filterCategory="" Icon={Gamepad2}>
+      <MenuButton filterCategory="" Icon={Package}>
         Todos
       </MenuButton>
       <MenuButton filterCategory="Console" Icon={Gamepad2}>

@@ -1,12 +1,29 @@
 import { createContext, useState } from "react";
 import { products } from "../data/Products";
 
-export const ProductsContext = createContext();
+type Product = {
+  id: number;
+  name: string;
+  category: string;
+  price: number;
+  image: string;
+};
 
-export const ProductsProvider = ({ children }) => {
-  const [productFiltered, setProductFiltered] = useState(products);
+type ProductsContextType = {
+  productFiltered: Product[];
+  filterProducts: (category?: string) => void;
+};
 
-  function filterProducts(category) {
+export const ProductsContext = createContext<ProductsContextType | null>(null);
+
+type ProductsProviderProps = {
+  children: React.ReactNode;
+};
+
+export const ProductsProvider = ({ children }: ProductsProviderProps) => {
+  const [productFiltered, setProductFiltered] = useState<Product[]>(products);
+
+  function filterProducts(category?: string) {
     if (category) {
       return setProductFiltered(
         products.filter((product) => product.category === category)
