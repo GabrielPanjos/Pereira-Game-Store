@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { products } from "../data/Products";
+import { products } from "../data/Products/Products";
 
 type Product = {
   id: number;
