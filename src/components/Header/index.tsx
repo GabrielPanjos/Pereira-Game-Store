@@ -1,14 +1,13 @@
 import { CircleUserRound, Phone, ShoppingCart, Search } from "lucide-react";
 
-// Componentes
 import { HeaderButton } from "./HeaderButton";
 
 export function Header() {
   return (
     <header className="w-full h-30 justify-between flex items-center bg-slate-900">
       <div className="flex ml-15">
-        <button>
-          logo
+        <button className="text-slate-100 text-[28px]">
+          Pereira Game Store
         </button>
       </div>
       <div className="flex mr-15 gap-30">

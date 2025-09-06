@@ -1,13 +1,12 @@
-import { Header } from "../../components/Header";
-import { Menu } from "../../components/Menu";
+import { MainTemplate } from "../../templates/MainTemplate";
 import { Products } from "../../components/Products";
 
 export function Home() {
   return (
     <div className="h-full w-full bg-slate-100 flex flex-col items-center">
-      <Header />
-      <Menu />
-      <Products />
+      <MainTemplate>
+        <Products />
+      </MainTemplate>
     </div>
   );
 }
