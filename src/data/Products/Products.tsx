@@ -33,4 +33,12 @@ export const products: Product[] = [
     "Console Xbox Series X Preto",
     "productsImages/consoles/xboxSeriesX.png"
   ),
+  new Product(
+    5,
+    "Cadeira Gamer",
+    531.98,
+    "Movel",
+    "Cadeira Gamer Vermelha",
+    "productsImages/moveis/cadeiraGamer.png"
+  ),
 ];
