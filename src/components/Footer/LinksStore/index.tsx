@@ -1,4 +1,3 @@
-
 import { LinkTitle } from "./LinkTitle";
 
 type LinksStoreProps = {
@@ -11,7 +10,6 @@ export function LinksStore({ title, children }: LinksStoreProps) {
     <ul className="flex flex-col gap-1">
       <LinkTitle>{title}</LinkTitle>
       {children}
-      
     </ul>
   );
 }

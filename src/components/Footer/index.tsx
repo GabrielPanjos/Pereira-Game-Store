@@ -5,8 +5,8 @@ export function Footer() {
   return (
     <footer className="bg-sky-950 w-full">
       <div className="m-16 flex flex-col gap-20 text-slate-100">
-        <div className="flex gap-40">
-          <LinksStore title="Pereira Game Store">
+        <div className="flex ml-20 mr-20 gap-40">
+          <LinksStore title="Loja">
             <FooterLinks href="#">Sobre nós</FooterLinks>
             <FooterLinks href="#">Contato / Suporte</FooterLinks>
             <FooterLinks href="#">Termos de uso</FooterLinks>

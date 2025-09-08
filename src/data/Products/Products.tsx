@@ -4,7 +4,7 @@ export const products: Product[] = [
   new Product(
     1,
     "Console PlayStation 5",
-    5499.99,
+    4899.69,
     "Console",
     "Console PlayStation 5 Pro",
     "productsImages/consoles/playstation5.png"
@@ -12,7 +12,7 @@ export const products: Product[] = [
   new Product(
     2,
     "Fortrek PRO M7 RGB",
-    119.99,
+    139.52,
     "Periferico",
     "Mouse Fortrek PRO M7 RGB - gamer preto",
     "productsImages/perifericos/fortrekM7.png"
@@ -28,7 +28,7 @@ export const products: Product[] = [
   new Product(
     4,
     "Console Xbox Series X",
-    5699.99,
+    5299.0,
     "Console",
     "Console Xbox Series X Preto",
     "productsImages/consoles/xboxSeriesX.png"
