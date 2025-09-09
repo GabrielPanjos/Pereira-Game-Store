@@ -5,22 +5,34 @@ import { MenuButton } from "./MenuButton";
 export function Menu() {
   return (
     <nav className="flex justify-center items-center gap-22 w-full h-25 bg-sky-950">
-      <MenuButton filterCategory="" Icon={Package}>
+      <MenuButton to="/" filterCategory="" Icon={Package}>
         Todos
       </MenuButton>
-      <MenuButton filterCategory="Console" Icon={Gamepad2}>
+      <MenuButton
+        to="/category/consoles"
+        filterCategory="Console"
+        Icon={Gamepad2}
+      >
         Consoles
       </MenuButton>
-      <MenuButton filterCategory="Jogo" Icon={Disc3}>
+      <MenuButton to="/category/jogos" filterCategory="Jogo" Icon={Disc3}>
         Jogos
       </MenuButton>
-      <MenuButton filterCategory="Periferico" Icon={Keyboard}>
+      <MenuButton
+        to="/category/perifericos"
+        filterCategory="Periferico"
+        Icon={Keyboard}
+      >
         Periféricos
       </MenuButton>
-      <MenuButton filterCategory="Movel" Icon={Armchair}>
+      <MenuButton to="/category/moveis" filterCategory="Movel" Icon={Armchair}>
         Móveis
       </MenuButton>
-      <MenuButton filterCategory="Colecionavel" Icon={Package}>
+      <MenuButton
+        to="/category/colecionaveis"
+        filterCategory="Colecionavel"
+        Icon={Package}
+      >
         Colecionáveis
       </MenuButton>
     </nav>

@@ -5,12 +5,21 @@ export function Footer() {
   return (
     <footer className="bg-sky-950 w-full">
       <div className="m-16 flex flex-col gap-20 text-slate-100">
-        <div className="flex ml-20 mr-20 mb-30 gap-40">
+        <div className="flex justify-center mb-30 gap-40">
           <LinksStore title="Loja">
             <FooterLinks href="#">Sobre nós</FooterLinks>
             <FooterLinks href="#">Contato / Suporte</FooterLinks>
             <FooterLinks href="#">Termos de uso</FooterLinks>
             <FooterLinks href="#">Política de privacidade</FooterLinks>
+          </LinksStore>
+
+          <LinksStore title="Categorias">
+            <FooterLinks href="#">Todos</FooterLinks>
+            <FooterLinks href="#">Consoles</FooterLinks>
+            <FooterLinks href="#">Jogos</FooterLinks>
+            <FooterLinks href="#">Periféricos</FooterLinks>
+            <FooterLinks href="#">Móveis</FooterLinks>
+            <FooterLinks href="#">Colecionáveis</FooterLinks>
           </LinksStore>
         </div>
       </div>
