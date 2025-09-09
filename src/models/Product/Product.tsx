@@ -1,9 +1,9 @@
 export type Category =
-  | "Jogo"
-  | "Console"
-  | "Periferico"
-  | "Movel"
-  | "Colecionavel";
+  | "Jogos"
+  | "Consoles"
+  | "Perifericos"
+  | "Moveis"
+  | "Colecionaveis";
 
 export class Product {
   id: number;
