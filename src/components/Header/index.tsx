@@ -10,7 +10,7 @@ export function Header() {
           to="/"
           className="text-slate-100 w-[120px] flex justify-center items-center"
         >
-          <img src="logo/logo.png" />
+          <img src="/logo/logo.png" />
         </Link>
       </div>
       <div className="flex mr-15 gap-30">
