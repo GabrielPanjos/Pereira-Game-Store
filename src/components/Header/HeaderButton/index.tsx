@@ -9,13 +9,14 @@ type HeaderButtonProps = {
 
 export function HeaderButton({ Icon, children, to }: HeaderButtonProps) {
   return (
-    <button className="flex items-center gap-2 text-slate-100 hover:text-slate-300">
+    <Link
+      to={to}
+      className="flex items-center gap-2 text-slate-100 hover:text-slate-300"
+    >
       <Icon className="h-7 w-7" />
       {children && (
-        <Link to={to} className="font-semibold text-[18px]">
-          {children}
-        </Link>
+        <span className="font-semibold text-[18px]">{children}</span>
       )}
-    </button>
+    </Link>
   );
 }
