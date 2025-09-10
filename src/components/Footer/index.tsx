@@ -4,22 +4,24 @@ import { FooterLinks } from "./LinksStore/FooterLinks";
 export function Footer() {
   return (
     <footer className="bg-sky-950 w-full">
-      <div className="m-16 flex flex-col gap-20 text-slate-100">
-        <div className="flex justify-center mb-30 gap-40">
+      <div className="p-8 flex flex-col gap-20 text-slate-100">
+        <div className="flex justify-center mt-20 mb-30 gap-40">
           <LinksStore title="Loja">
-            <FooterLinks href="#">Sobre nós</FooterLinks>
-            <FooterLinks href="#">Contato / Suporte</FooterLinks>
-            <FooterLinks href="#">Termos de uso</FooterLinks>
-            <FooterLinks href="#">Política de privacidade</FooterLinks>
+            <FooterLinks to="/about">Sobre nós</FooterLinks>
+            <FooterLinks to="/contact">Contato / Suporte</FooterLinks>
+            <FooterLinks to="/terms">Termos de uso</FooterLinks>
+            <FooterLinks to="/privacy">Política de privacidade</FooterLinks>
           </LinksStore>
 
           <LinksStore title="Categorias">
-            <FooterLinks href="#">Todos</FooterLinks>
-            <FooterLinks href="#">Consoles</FooterLinks>
-            <FooterLinks href="#">Jogos</FooterLinks>
-            <FooterLinks href="#">Periféricos</FooterLinks>
-            <FooterLinks href="#">Móveis</FooterLinks>
-            <FooterLinks href="#">Colecionáveis</FooterLinks>
+            <FooterLinks to="/">Todos</FooterLinks>
+            <FooterLinks to="/category/consoles">Consoles</FooterLinks>
+            <FooterLinks to="/category/jogos">Jogos</FooterLinks>
+            <FooterLinks to="/category/perifericos">Periféricos</FooterLinks>
+            <FooterLinks to="/category/moveis">Móveis</FooterLinks>
+            <FooterLinks to="/category/colecionaveis">
+              Colecionáveis
+            </FooterLinks>
           </LinksStore>
         </div>
       </div>

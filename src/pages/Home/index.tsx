@@ -3,10 +3,10 @@ import { Products } from "../../components/Products";
 
 export function Home() {
   return (
-    <div className="h-full w-full bg-slate-100 flex flex-col items-center">
-      <MainTemplate>
+    <MainTemplate>
+      <div className="flex flex-col items-center">
         <Products />
-      </MainTemplate>
-    </div>
+      </div>
+    </MainTemplate>
   );
 }
