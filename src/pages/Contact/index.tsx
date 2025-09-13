@@ -31,6 +31,7 @@ export function Contact() {
             E-mail
           </ContactButton>
         </div>
+        <h1 className="text-[40px] font-bold">Suporte</h1>
       </section>
     </MainTemplate>
   );

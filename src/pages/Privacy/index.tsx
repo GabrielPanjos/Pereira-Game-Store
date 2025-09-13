@@ -1,3 +1,5 @@
+import { MainTemplate } from "../../templates/MainTemplate";
+
 export function Privacy() {
-  return <div></div>;
+  return <MainTemplate></MainTemplate>;
 }
