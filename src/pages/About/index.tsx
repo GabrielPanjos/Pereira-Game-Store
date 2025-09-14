@@ -1,6 +1,6 @@
 import { MainTemplate } from "../../templates/MainTemplate";
 import { AboutList } from "./AboutList";
-import { AboutTopic } from "./AboutTopic";
+import { Topic } from "../../components/Topic";
 
 export function About() {
   return (
@@ -11,7 +11,7 @@ export function About() {
             Sobre Pereira Game Store
           </h1>
           <div className="flex flex-col gap-8 w-200 ">
-            <AboutTopic title="Missão">
+            <Topic title="Missão">
               Proporcionar a melhor experiência de compra para gamers e
               entusiastas, oferecendo consoles, jogos, periféricos, móveis e
               colecionáveis de qualidade, com atendimento ágil, suporte próximo
@@ -19,16 +19,16 @@ export function About() {
               é ser um ponto de encontro para apaixonados por games, onde cada
               cliente encontra não só produtos, mas também inspiração e
               pertencimento.
-            </AboutTopic>
-            <AboutTopic title="Visão">
+            </Topic>
+            <Topic title="Visão">
               Ser reconhecida como a maior e mais confiável loja gamer do Brasil
               até 2030, tornando-se referência em inovação, credibilidade e
               paixão pelo universo dos jogos. Desejamos criar uma comunidade
               sólida, expandindo nossas fronteiras para além do e-commerce,
               participando de eventos, lançamentos e promovendo experiências que
               aproximem cada vez mais os jogadores do seu mundo favorito.
-            </AboutTopic>
-            <AboutTopic title="Valores">
+            </Topic>
+            <Topic title="Valores">
               <ul className="flex flex-col gap-2">
                 <AboutList>
                   <strong>Paixão por games:</strong> acreditamos que jogar vai
@@ -61,7 +61,7 @@ export function About() {
                   especial.
                 </AboutList>
               </ul>
-            </AboutTopic>
+            </Topic>
           </div>
         </div>
       </div>

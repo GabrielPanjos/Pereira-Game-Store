@@ -1,9 +1,9 @@
-type AboutTopicProps = {
+type TopicProps = {
   title: string;
   children: string | React.ReactNode;
 };
 
-export function AboutTopic({ title, children }: AboutTopicProps) {
+export function Topic({ title, children }: TopicProps) {
   return (
     <div className="flex flex-col gap-2">
       <h2 className="font-bold text-[28px] text-sky-950">{title}</h2>

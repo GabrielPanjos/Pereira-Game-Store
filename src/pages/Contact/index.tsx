@@ -32,6 +32,9 @@ export function Contact() {
           </ContactButton>
         </div>
         <h1 className="text-[40px] font-bold">Suporte</h1>
+        <div>
+          <h2>nos de sugestões!</h2>
+        </div>
       </section>
     </MainTemplate>
   );
