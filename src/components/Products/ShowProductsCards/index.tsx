@@ -21,6 +21,7 @@ export function ShowProductsCards() {
                 price={product.price}
                 image={product.image}
                 productName={product.name}
+                productId={product.id}
               />
             </div>
           );

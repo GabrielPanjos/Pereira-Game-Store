@@ -1,12 +1,12 @@
 import type { LucideProps } from "lucide-react";
 
-type ContactButtonProps = {
+type IconButtonProps = {
   children: string;
   href: string;
   Icon: React.ComponentType<LucideProps>;
 };
 
-export function ContactButton({ children, href, Icon }: ContactButtonProps) {
+export function IconButton({ children, href, Icon }: IconButtonProps) {
   return (
     <a
       className=" flex flex-col justify-center items-center w-30"
