@@ -14,7 +14,7 @@ export function ShowProductPage({ productId }: ShowProductPageProps) {
         return (
           <div className="flex flex-row rounded h-180 p-5 w-full bg-sky-950">
             <div className="flex rounded justify-center items-center w-[50%]">
-              <img className="w-[50%] h-[50%]" src={product.image} />
+              <img className="w-[50%] h-[50%] " src={product.image} />
             </div>
             <div className="flex flex-col justify-end w-[50%] rounded border border-gray-300 bg-gray-100 text-slate-100 p-5">
               <span className="font-medium text-2xl text-slate-900">
