@@ -16,9 +16,11 @@ export function ProductCard({
 }: ProductCardProps) {
   return (
     <div className="flex flex-col rounded border border-gray-300 items-center bg-white h-100 w-75">
-      <div className="w-full h-60 flex items-center justify-center">
-        <img className="h-40" src={image} />
-      </div>
+      <Link to={`/product/${productId}`}>
+        <div className="w-full h-60 flex items-center justify-center">
+          <img className="h-40" src={image} />
+        </div>
+      </Link>
       <div className="pl-5 pr-5 h-40 w-full justify-between flex flex-col">
         <div className="flex flex-col">
           <Link

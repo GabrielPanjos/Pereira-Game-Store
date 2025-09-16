@@ -5,8 +5,8 @@ import { Topic } from "../../components/Topic";
 export function About() {
   return (
     <MainTemplate>
-      <div className="p-40 flex flex-col items-center">
-        <div className="flex flex-col gap-10">
+      <div className="p-40 flex flex-col justcen items-center">
+        <div className="flex flex-col items-center gap-20">
           <h1 className="font-bold text-[44px] text-sky-950">
             Sobre Pereira Game Store
           </h1>

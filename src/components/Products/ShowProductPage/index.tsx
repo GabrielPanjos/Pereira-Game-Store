@@ -1,16 +1,17 @@
 import { products } from "../../../data/Products/Products";
 import { CardButton } from "../ProductCard/CardButton";
+import { useParams } from "react-router-dom";
 
-type ShowProductPageProps = {
-  productId: number;
-};
+export function ShowProductPage() {
+  const { product } = useParams<{ product: string }>();
 
-export function ShowProductPage({ productId }: ShowProductPageProps) {
-  const product = products.filter((product) => product.id === productId);
+  const currentProduct = products.filter(
+    (p) => !p?.id.toString() || p.id.toString() === product
+  );
 
   return (
     <div>
-      {product.map((product) => {
+      {currentProduct.map((product) => {
         return (
           <div className="flex flex-row rounded h-180 p-5 w-full bg-sky-950">
             <div className="flex rounded justify-center items-center w-[50%]">

@@ -6,7 +6,7 @@ export function ProductPage() {
     <MainTemplate>
       <div className="flex justify-center items-center">
         <div className="mt-10 mb-10 w-350 rounded border border-gray-300">
-          <ShowProductPage productId={1} />
+          <ShowProductPage />
         </div>
       </div>
     </MainTemplate>
