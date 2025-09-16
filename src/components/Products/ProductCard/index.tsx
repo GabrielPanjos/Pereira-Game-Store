@@ -30,7 +30,7 @@ export function ProductCard({
           <span className="font-bold text-[16px] text-sky-900">R${price}</span>
         </div>
         <div className="mb-5">
-          <CardButton />
+          <CardButton>Comprar</CardButton>
         </div>
       </div>
     </div>
