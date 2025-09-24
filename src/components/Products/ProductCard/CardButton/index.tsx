@@ -11,7 +11,7 @@ export function CardButton({
 }: CardButtonProps) {
   return (
     <button
-      className={`mt-5 ${background} ${backgroundHover} text-slate-100 w-full h-12 rounded font-bold`}
+      className={`${background} ${backgroundHover} text-slate-100 w-full h-12 rounded font-bold`}
     >
       {children}
     </button>
