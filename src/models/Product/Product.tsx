@@ -12,6 +12,7 @@ export class Product {
   category: Category;
   description: string;
   image: string;
+  images?: string[];
 
   constructor(
     id: number,
@@ -19,7 +20,8 @@ export class Product {
     price: number,
     category: Category,
     description: string,
-    image: string
+    image: string,
+    images?: string[]
   ) {
     this.id = id;
     this.name = name;
@@ -27,5 +29,6 @@ export class Product {
     this.category = category;
     this.description = description;
     this.image = image;
+    this.images = images;
   }
 }

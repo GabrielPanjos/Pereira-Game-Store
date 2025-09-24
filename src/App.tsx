@@ -8,6 +8,7 @@ import { Privacy } from "./pages/Privacy";
 import { NotFound } from "./pages/NotFound";
 import { Category } from "./pages/Category";
 import { ProductPage } from "./pages/ProductPage";
+import { Login } from "./pages/Login";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
           <Route path="product/:product" element={<ProductPage />} />
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
